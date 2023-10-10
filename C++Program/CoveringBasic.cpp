@@ -1,21 +1,21 @@
 #include <iostream>
 
 int main() {
-    // Declare variables for length and width of the rectangle
+    // Declare variables for the length and width of the rectangle
     double length, width;
 
     // Prompt user for input
-    std::cout << "Enter length of the rectangle: ";
-    std::cin >> length;
+    cout << "Enter the length of the rectangle: ";
+    cin >> length;
 
-    std::cout << "Enter width of the rectangle: ";
-    std::cin >> width;
+    cout << "Enter width of the rectangle: ";
+    cin >> width;
 
     // Calculate the area of the rectangle
     double area = length * width;
 
     // Display the result
-    std::cout << "Area of the rectangle: " << area << std::endl;
+    cout << "Area of the rectangle: " << area << std::endl;
 
     return 0;
 }
