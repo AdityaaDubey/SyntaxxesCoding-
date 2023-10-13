@@ -11,7 +11,7 @@ int main() {
     // Asking the user for input
     cout << "Enter your name: ";
     
-    // Taking user input as a string
+    // Taking user input as a string: getline() reads a line from the input stream until a newline character ('\n') is encountered and stores it in the given string variable.
     getline(cin, userInput);
     
     // Printing the user input
