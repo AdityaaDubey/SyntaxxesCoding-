@@ -26,21 +26,26 @@ int main()
 
 #include <iostream>
 using namespace std;
- 
-int main() 
-{
+
+int reverse(int n);
+
+int main() {
   int n;
-   
-   cout<<" Enter Number:"<<endl;
-   cin>> n;
+
+  cout << "Enter Number:" << endl;
+  cin >> n;
+
+  int reversed_number = reverse(n);
+  cout << "Reverse: " << reversed_number << endl;
+
+  return 0;
+}
+
 int reverse(int n) {
   if (n == 0) {
     return 0;
   } else {
-    // Recursively reverse the number n/10.
     int reversed_number = reverse(n / 10);
-
-    // Multiply the remainder of n by 10 and add it to the reversed number.
     return (n % 10) * 10 + reversed_number;
   }
 }
